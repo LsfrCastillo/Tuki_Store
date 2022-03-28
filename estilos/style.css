@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    list-style-type: none;
+    color: #afabaa;
+}
+a{
+    color: #afabaa;
+}
+/*--- General ---*/
+.bigBanner{
+    background-color: #1f1e23;
+    color: #afabaa;
+    display: flex;                  /*con el display y el space hice que se separen*/
+    justify-content: space-between;
+    align-items: center;
+}
+.cMain{
+    background-color: #1f1e23;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.logo{  
+    display: inline;
+}
+    /*Navegacion*/
+    nav a {
+        color: #afabaa;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    nav li{
+        list-style-type: none;
+        padding: 10px;
+    }
+    /*Fin Navegacion*/
+.sesion{
+    filter: invert(100%);
+}
+footer{
+    background-color: #1f1e23;
+    color: #afabaa;
+    padding: 10px 0;
+    width: auto; 
+    margin-top: auto;
+    
+    
+}
+footer p{
+    text-align: center;
+}
+.items img{
+    margin-top: 1.5rem;
+    width: 43%;
+    height: 90%;
+    margin-left: 29%;
+    margin-bottom: 3%;
+    border: solid 5px  #f5dd02;
+    overflow: hidden;
+}
+.catalogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+/*--- Fin General ---*/
+
+
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---*/
+
+
+/*--- Index ---*/
+.carrusel img{
+    width: 100%;
+}
+main h1{
+    text-align: center;
+}
+
+/*--- Fin Index ---*/
+
+
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---*/
+
+
+/*--- Logeo ---*/
+.login{
+    height: 249px;
+    width: 30%;
+    background-color: pink;
+    border: 3px solid black;
+    text-align: center;
+}
+.signUp{
+        height: 249px;
+        width: 30%;
+        background-color: pink;
+        border: 3px solid black;
+        text-align: center;
+}
+/*--- Fin Logeo ---*/
+
+
+
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---*/
+
+
+
+/*--- Soporte ---*/
+form{
+    border: 2px solid #b73533;
+    display: flex;
+    flex-direction: column;
+}
+.datos{
+    display: flex;
+}
+
+/*--- Fin Soporte ---*/
+
+
+
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---*/
+
+
+
+/*--- Juego ---*/
+.encabezado{
+    display: flex;
+    background: #b73533;
+}
+.propiedades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo ul{
+    padding-top: 15px;
+}
+.titulo ul li{
+    display: inline;
+    font-size: 40px;
+    padding-right: 200px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+.sipnosis{
+    padding-top: 35px;
+}
+.miniatura{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.miniatura img{
+    height: 35%;
+    width: 35%;
+}
+
+.requisitos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/*--- Juego---*/
+
+/*---- MEDIA ---*/
+@media all and (max-width: 300px){
+    .catalogo{
+        height: 10%;
+        width: 10%;
+    }
+}
+/*---- Fin Media ---*/

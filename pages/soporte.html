@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="icon" href="../estilos/icon.jpg"/>
+    <title>TukiStore</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="bigBanner">
+                <div class="buttonNav">
+                    <ul>
+                        <li> 
+                            <a href="../index.html" class="logo"><img src="../estilos/logo.jpg" alt="logo del tuki"></a>
+                        </li>
+                        <li>
+                            <a href="informacion.html">Informacion</a> 
+                        </li>
+                        <li>
+                            <a href="soporte.html">Soporte</a> 
+                        </li>
+                    </div>
+                    <div>
+                        <li> 
+                            <a href="sesion.html" class="sesion"><img src="../estilos/logoSesion.png" alt="Iniciar Sesion" height="30" width="30"></a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="cMain">
+        <h1>Soporte</h1>
+        <p>Elija el tipo de problema</p>
+        <p>¿Qué tipo de problema estás experimentando?</p>
+        
+        <form action="">
+            <div>
+            <div class="datos"><label for="" class="usuario">Usuario:<input type="text" name="usuario" placeholder="Ingrese su Usuario"required></label>
+                
+            <label for="" class="email">E-mail:<input type="text" name="E-mail" placeholder="Ingrese su E-mail"required></label>
+                
+            <label for="" class="categoria">Categoria
+                <select required id="dropdown" name="role">
+                    <option disabled selected value hidden>Selecciona una opcion</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="envio">Demora con el envio</option>
+                    <option value="compra">Problema con una compra</option>
+                    <option value="pago">Problema con el pago</option>
+                    <option value="contrasena">Contraseña</option>
+                    <option value="otro">Otro</option>
+                    </select>
+            </label>
+            <label for="">
+                Asunto:<input type="text" name="Asunto" placeholder="Ingrese el Asunto"required>
+            </label>
+                </div>
+            </div>
+            <div>
+                <textarea name="" id="" cols="30" rows="1" placeholder="Escribe la razon por la que solicito el soporte"required></textarea>
+            </div>
+            <label for="">Adjuntar Archivos(opcional):<input type="file" name="Archivo"></label>
+            <div>
+            <button><a href="../index.html">Cancelar</a></button>
+            <input type="submit" value="Enviar">
+            </div>
+        </form>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5oyxJC0bBxwAEZ1OCineHL%2FUntitled%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+    </main>
+    <footer>
+        <hr>
+        <p>Creado por <span><a href="https://www.youtube.com/watch?v=kA4X5cQa_Jo">Luis Fernando Castillo</a></span> </p>
+        <hr>
+    </footer>
+</body>
+</html>
