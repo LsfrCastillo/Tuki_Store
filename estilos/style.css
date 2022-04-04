@@ -78,6 +78,13 @@ footer {
 
 footer p {
     text-align: center;
+}   
+
+.items img:hover{
+    box-shadow: 0 0 20px 2px #fca2ff;
+    transform: scale(1.1);
+    z-index: 2;
+    
 }
 
 .items img {
@@ -86,8 +93,7 @@ footer p {
     height: 90%;
     margin-left: 29%;
     margin-bottom: 3%;
-    border: solid 5px #f5dd02;
-    overflow: hidden;
+    transition: 1s;
 }
 
 .catalogo {
@@ -231,21 +237,26 @@ button {
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
     color: black;
+    box-shadow: 0 0 10px 0px rgba(234, 207, 238, 0.3);
+    
 }
 
 .container--form {
     width: 60%;
     margin: 1rem auto 1rem auto;
+    
 }
 
 .form--group {
     margin: 1rem 2rem 1rem 2rem;
     padding: 0.25rem;
     color: black;
+    
 }
 
 .form--group option {
     color: black;
+    
 }
 
 .form--control {
