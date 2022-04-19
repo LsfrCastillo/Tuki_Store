@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
+@import "variable";
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: map-get($map:$mapa,$key:box-sizing);
+  margin: map-get($map:$mapa,$key:margin);
+  padding: map-get($map:$mapa,$key:padding);
+  list-style-type: map-get($map:$mapa,$key:list-style-type);
+  color : map-get($map:$mapa,$key:color);
+  text-decoration: map-get($map:$mapa,$key:text-decoration);
   font-family: "Roboto", sans-serif;
-  list-style-type: none;
-  color: #afabaa;
-  text-decoration: none;
 }
 
 a {
@@ -52,10 +52,7 @@ a {
 
 nav {
   ul {
-    text-decoration: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    @include cero;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -319,8 +316,8 @@ button {
 /*--- Juego ---*/
 
 .icon-item img {
-  width: 100%;
-  height: 100%;
+  @extend .signup;
+  
 }
 
 .encabezado {
@@ -376,6 +373,7 @@ button {
   .catalogo {
     height: 100%;
     width: 100%;
+    
   }
 
   .encabezado {

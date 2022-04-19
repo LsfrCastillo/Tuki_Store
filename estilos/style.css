@@ -3,10 +3,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
   list-style-type: none;
   color: #afabaa;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "Roboto", sans-serif; }
 
 a {
   color: #afabaa;
@@ -115,7 +115,7 @@ main h1 {
 #chk {
   display: none; }
 
-.signup {
+.signup, .icon-item img {
   position: relative;
   width: 100%;
   height: 100%; }
@@ -176,7 +176,7 @@ main h1 {
   #chk:checked ~ .login label {
     transform: scale(1); }
 
-#chk:checked ~ .signup label {
+#chk:checked ~ .signup label, .icon-item #chk:checked ~ img label {
   transform: scale(0.6); }
 
 /*--- Fin Logeo ---*/
@@ -249,15 +249,13 @@ button {
 /*--- Fin Soporte ---*/
 /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---*/
 /*--- Juego ---*/
-.icon-item img {
-  width: 100%;
-  height: 100%; }
-
 .encabezado {
   display: flex;
   background: #b73533;
   background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-  background: transparent; }
+  background: transparent; 
+  justify-content: space-around;
+}
 
 .propiedades {
   display: flex;
