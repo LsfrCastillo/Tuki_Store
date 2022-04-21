@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/*--- 
+Sinceramente no utilice mucho el map
+la unica variable que reunilice fue la del color
+color : map-get($map:$mapa,$key:color);
+
+extend
+Lo utilice en un la clase Datos y Body form
+Ya que alli utilice 
+  display: flex;
+  flex-direction: column;
+mixin lo use para 
+nav > ul 
+Asi me dejaba normal los enlaces
+---*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,13 +44,17 @@ a {
   min-height: 100vh;
   overflow: hidden; }
 
+/*Scroll*/
+.Scrolltuneo::-webkit-scrollbar {
+  scrollbar-width: none; }
+
+/*Fin Scroll*/
 .logo {
   display: inline; }
 
 /*Navegacion*/
 .nav a {
-  color: #afabaa;
-  color: red; }
+  color: #afabaa; }
 
 nav ul {
   text-decoration: none;
@@ -225,16 +243,18 @@ button {
   border-radius: 2px;
   cursor: pointer; }
 
-.bodyForm {
+.datos, .bodyForm {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; }
+
+.bodyForm {
   align-items: center; }
 
 .Formulario {
   display: flex;
   flex-direction: row; }
 
-.datos {
+.datos, .bodyForm {
   display: flex;
   flex-direction: column; }
 
@@ -244,7 +264,6 @@ button {
 .encabezado {
   display: flex;
   background: #b73533;
-  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
   background: transparent;
   flex-direction: row;
   justify-content: space-between;
@@ -302,7 +321,6 @@ footer {
     text-align: center; }
 
 .footer {
-  padding: px 0;
   background-color: #faebd7;
   color: #b4b9be; }
 

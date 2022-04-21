@@ -1,7 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import "variable";
+/*--- 
+Sinceramente no utilice mucho el map
+la unica variable que reunilice fue la del color
+color : map-get($map:$mapa,$key:color);
+
+extend
+Lo utilice en un la clase Datos y Body form
+Ya que alli utilice 
+  display: flex;
+  flex-direction: column;
+mixin lo use para 
+nav > ul 
+Asi me dejaba normal los enlaces
+---*/
 * {
-  box-sizing: map-get($map:$mapa,$key:box-sizing);
+  box-sizing: map-get($map:$mapa,$key:box-sizing); 
   margin: map-get($map:$mapa,$key:margin);
   padding: map-get($map:$mapa,$key:padding);
   list-style-type: map-get($map:$mapa,$key:list-style-type);
@@ -11,10 +25,10 @@
 }
 
 a {
-  color: #afabaa;
-  text-decoration: none;
+  color : map-get($map:$mapa,$key:color);
+  text-decoration: map-get($map:$mapa,$key:text-decoration);
   &:hover {
-  color: #afabaa;
+  color : map-get($map:$mapa,$key:color);
   }
   
 }
@@ -23,7 +37,7 @@ a {
 
 .cabecera {
   background-color: #0f0c29;
-  color: #afabaa;
+  color : map-get($map:$mapa,$key:color);
   display: flex;
 
   /*con el display y el space hice que se separen*/
@@ -38,6 +52,13 @@ a {
   min-height: 100vh;
   overflow: hidden;
 }
+/*Scroll*/
+.Scrolltuneo::-webkit-scrollbar{
+  
+  scrollbar-width: none;
+}
+
+/*Fin Scroll*/
 
 .logo {
   display: inline;
@@ -46,8 +67,8 @@ a {
 /*Navegacion*/
 
 .nav a {
-  color: #afabaa;
-  color: red;
+  color : map-get($map:$mapa,$key:color);
+  
 }
 
 nav {
@@ -116,8 +137,8 @@ main h1 {
 /*--- Logeo ---*/
 
 .cuenta {
-  margin: 0;
-  padding: 0;
+  margin: map-get($map:$mapa,$key:margin);
+  padding: map-get($map:$mapa,$key:padding);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,10 +305,13 @@ button {
   border-radius: 2px;
   cursor: pointer;
 }
-
-.bodyForm {
+.datos {
   display: flex;
   flex-direction: column;
+}
+
+.bodyForm {
+  @extend .datos;
   align-items: center;
 }
 
@@ -315,7 +339,6 @@ button {
 .encabezado {
   display: flex;
   background: #b73533;
-  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
   background: transparent;
   flex-direction: row;
   justify-content: space-between;
@@ -388,7 +411,6 @@ footer {
 }
 .footer {
   
-  padding: px 0;
   background-color: #faebd7;
   color: #b4b9be; }
   .footer__pages {
@@ -453,10 +475,10 @@ footer {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px); }
 .btn{
-  color: #afabaa;
+  color : map-get($map:$mapa,$key:color);
 }
 .dropdown-toggle:hover{
-color: #afabaa;
+  color : map-get($map:$mapa,$key:color);
 }
 .animate--text {
   text-transform: uppercase;
